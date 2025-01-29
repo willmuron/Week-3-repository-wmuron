@@ -67,7 +67,12 @@ Forking allows you to make a copy of someone else's repository under your GitHub
    ```bash
    cd your-forked-repository-name
    ```
-6. Modify, create, and edit files as needed.
+6.Configure Git with your username and email (required to commit changes):
+  ```bash
+  git config --global user.name "Your Name"
+  git config --global user.email "your-email@example.com"
+   ```
+7. Modify, create, and edit files as needed.
 
 ---
 
