@@ -1,3 +1,9 @@
+# LOG INTO THE HPC
+- ssh into the HPC
+  ```bash
+  ssh your-psc-username@bridges2.psc.edu
+  ```
+- When prompted, type your password. You will not see any characters appear on the screen as you type (not even * symbols), but your input is still being recorded. Press Enter when done.
 # IMPORTANT DIRECTORIES IN THE HPC
 
 ## 1. Your Home Directory
