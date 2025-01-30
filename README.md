@@ -55,6 +55,15 @@ However, you cannot push changes unless you own the repository.
    ```bash
    cd repository-name
    ```
+4. List the directory to see the files ara available and check that the contents of the files are not corrupted.
+  ```bash
+  ls
+  cat example-file.slurm
+  ```
+6. When finished, go back to your home directory
+  ```bash
+  cd ~
+  ```
 
 ---
 
@@ -63,9 +72,9 @@ Forking allows you to make a copy of someone else's repository under your GitHub
 
 ### Steps to Fork & Clone a Repository
 1. Go to GitHub → Open the repository you want to use.
-2. Click the "Fork" button (top right).
+2. Click the "Fork" button (top right or left in some devices).
 3. Your forked version will now have a new URL.
-4. Copy the URL and clone it to the HPC:
+4. Copy the URL and clone it to the HPC in your home directory:
    ```bash
    git clone https://your.forked.repository-url
    ```
@@ -79,7 +88,20 @@ Forking allows you to make a copy of someone else's repository under your GitHub
   git config --global user.email "your-email@example.com"
    ```
 7. Modify, create, and edit files as needed.
-
+---
+# GET READY TO SYNC GITHUB
+1. Go to your GitHub → click on your GitHub photo → Settings → Developer Settings → Personal Access Tokens.
+2. Click "Tokens (classic)".
+3. Click "Generate New Token".
+4. Click "Generate New Token (classic)".
+5. Select the necessary scopes:
+        repo (to access private repositories, for now.).
+6. Generate and copy the token. If you have difficulties remembering passcodes, use "1234" --please!.
+7. When Git asks for a password during git pull or git push, enter this token instead.
+8. To avoid re-entering the token every time:
+  ```bash
+git config --global credential.helper store
+   ```
 ---
 
 # ADDING, COMMITTING, AND PUSHING CHANGES
@@ -97,7 +119,7 @@ Once you've made changes in your local copy, push them back to GitHub:
    ```bash
    git push origin main
    ```
-*(If your branch is not named `main`, replace `main` with your branch name.)*
+*(If you are using a branch, replace `main` with your branch name.)*
 
 ---
 
