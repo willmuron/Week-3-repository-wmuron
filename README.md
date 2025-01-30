@@ -90,7 +90,7 @@ Forking allows you to make a copy of someone else's repository under your GitHub
 7. Modify, create, and edit files as needed.
 ---
 # GET READY TO SYNC GITHUB
-1. Go to your GitHub → click on your GitHub photo → Settings → Developer Settings → Personal Access Tokens.
+1. Go to GitHub → click on your profile photo → Settings → Developer Settings → Personal Access Tokens.
 2. Click "Tokens (classic)".
 3. Click "Generate New Token".
 4. Click "Generate New Token (classic)".
